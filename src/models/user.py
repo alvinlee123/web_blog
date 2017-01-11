@@ -9,7 +9,7 @@ from src.models.blog import Blog
 __author__ = 'alee'
 
 class User(object):
-    def __init__(self, email, password, _id):
+    def __init__(self, email, password, _id=None):
         self.email = email
         self.password = password
         self._id = uuid.uuid4().hex if _id is None else _id
